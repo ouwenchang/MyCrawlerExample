@@ -13,6 +13,7 @@ public class BasicExample {
 	// commit test test
 	public static void main(String[] args) {
 
+		// test data
 		// set to debug level
 		//CrawlerPack.setLoggerLevel(SimpleLog.LOG_LEVEL_DEBUG);
 
