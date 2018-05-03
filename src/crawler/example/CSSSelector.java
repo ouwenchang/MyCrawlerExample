@@ -30,13 +30,13 @@ class CSSSelector {
         CrawlerPack.setLoggerLevel(SimpleLog.LOG_LEVEL_OFF);
 
         // 遠端資料路徑
-        String uri = "https://tw.yahoo.com";
+        String uri ="https://www.ptt.cc/bbs/Gossiping/M.1524900218.A.97E.html";
 
         System.out.println(
                 CrawlerPack.start()
 
                         // 參數設定
-                        //.addCookie("key","value")	// 設定cookie
+                        .addCookie("over18","1")	// 設定cookie
                         //.setRemoteEncoding("big5")// 設定遠端資料文件編碼
 
                         // 選擇資料格式 (三選一)
@@ -45,7 +45,8 @@ class CSSSelector {
                         //.getFromXml(uri)
 
                         // 這兒開始是 Jsoup Document 物件操作
-                        .select(" li:nth-child(2) > div > span > a > span")
+                        //.select(" li:nth-child(2) > div > span > a > span")
+                        .select("#main-content > div:contains('噓')")
 
         );
     }

@@ -13,7 +13,7 @@ public class JsoupProb {
 		// no compressed file support
 		System.out.println(
 			// Jsoup.connect("http://en.wikipedia.org/").get()
-			Jsoup.connect("http://tisvcloud.freeway.gov.tw/roadlevel_info.xml.gz").get()
+			Jsoup.connect("http://plvr.land.moi.gov.tw/DownloadHistory?type=season&fileName=107S1").get()
 	    );
 	}
 }
